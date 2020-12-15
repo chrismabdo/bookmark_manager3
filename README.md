@@ -51,3 +51,5 @@ I'd like users to only manage their bookmarks.
 
 # Domain models
 -------------------------
+
+![Screenshot 2020-12-15 at 10 21 57](https://user-images.githubusercontent.com/37899538/102204059-46a8a600-3ec1-11eb-8f2c-a54e100e2958.png)
