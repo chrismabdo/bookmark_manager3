@@ -1,6 +1,9 @@
 <ul>
   <% @bookmarks.each do |bookmark| %>
-    <li><%= bookmark.gsub(URI.regexp, '<a href="\0">\0</a>') %></li>
+    <li><a href="<%= bookmark.url %>">
+        <%= bookmark.title %>
+      </a>
+    </li>
   <% end %>
 </ul>
 
