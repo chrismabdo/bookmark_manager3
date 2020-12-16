@@ -11,12 +11,8 @@ class Bookmark_manager < Sinatra::Base
   end
 
   post '/create' do
-    Bookmark.create(params[:new_bookmark])
+    Bookmark.create(params[:url], params[:title])
     redirect '/bookmarks'
-  end
-
-  get '/confirmation' do
-    erb :confirmation
   end
 
   run! if app_file == 0
