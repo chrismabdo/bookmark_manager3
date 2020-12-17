@@ -1,0 +1,13 @@
+<h1>Delete Your Bookmarks</h1>
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li><a href="<%= bookmark.url %>">
+        <%= bookmark.title %>
+      </a>
+      <input type="checkbox" name='title' value="<%= p bookmark.title %>">
+    </li>
+  <% end %>
+</ul>
+<form action="/conf_delete" method="post">
+  <input type="submit" value="Confirm Changes">
+</form>
